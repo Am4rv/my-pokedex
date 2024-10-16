@@ -1,0 +1,222 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    /* Cuadrícula con columnas automáticas */
+    gap: 20px;
+    /* Espacio entre las cartas */
+    padding: 10px;
+    /* Espacio alrededor de la cuadrícula */
+    width: calc(100% - 40px);
+}
+
+.card {
+    background-color: #f9f9f9;
+    /* Color de fondo de la carta */
+    border: 1px solid #ddd;
+    /* Borde de la carta */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    text-align: center;
+    /* Centrar texto */
+    padding: 5px;
+    /* Espacio interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    transition: transform 0.2s;
+    /* Transición para el efecto hover */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Efecto de zoom al pasar el mouse */
+}
+
+.image {
+    width: 100px;
+    /* Ancho de la imagen */
+    height: 100px;
+    /* Alto de la imagen */
+    object-fit: contain;
+    /* Asegura que la imagen mantenga su proporción */
+}
+
+.types {
+    margin-top: 5px;
+    /* Espacio entre el nombre y los tipos */
+    display: flex;
+    /* Usar flexbox para alinear los tipos */
+    justify-content: center;
+    /* Centrar los tipos */
+}
+
+.type {
+    background-color: #e0e0e0;
+    /* Color de fondo del tipo */
+    border-radius: 12px;
+    /* Bordes redondeados */
+    padding: 5px 10px;
+    /* Espaciado interno */
+    margin: 2px;
+    /* Espacio entre tipos */
+    font-size: 12px;
+    /* Tamaño de fuente */
+    text-transform: capitalize;
+    /* Capitalizar el texto */
+}
+
+/* Agregar colores para cada tipo de Pokémon */
+.type.fire {
+    background-color: #f08030;
+}
+
+.type.water {
+    background-color: #6890f0;
+}
+
+.type.grass {
+    background-color: #78c850;
+}
+
+.type.electric {
+    background-color: #f8d030;
+}
+
+.type.ice {
+    background-color: #98d8d8;
+}
+
+.type.fighting {
+    background-color: #c03028;
+}
+
+.type.poison {
+    background-color: #a040a0;
+}
+
+.type.ground {
+    background-color: #e0c068;
+}
+
+.type.flying {
+    background-color: #a890f0;
+}
+
+.type.psychic {
+    background-color: #f85888;
+}
+
+.type.bug {
+    background-color: #a8b820;
+}
+
+.type.rock {
+    background-color: #b8a038;
+}
+
+.type.ghost {
+    background-color: #705898;
+}
+
+.type.dark {
+    background-color: #705848;
+}
+
+.type.dragon {
+    background-color: #7038f8;
+}
+
+.type.steel {
+    background-color: #b8b8d0;
+}
+
+.type.fairy {
+    background-color: #f0b6b6;
+}
+
+/* Estilos para la búsqueda y el botón de carga */
+.main {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    /* Color de fondo de la sección principal */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    width: 100%;
+}
+
+.searchInput {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    /* Transición para el borde */
+}
+
+.searchInput:focus {
+    border-color: #0070f3;
+    /* Color de foco */
+    outline: none;
+    /* Sin borde de enfoque */
+}
+
+/* Nueva clase para el botón de cargar más */
+.loadMoreButton {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #4caf50;
+    /* Color del botón */
+    color: white;
+    /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Transición para el fondo */
+}
+
+.loadMoreButton:hover {
+    background-color: #45a049;
+    /* Color al pasar el cursor */
+}
+
+.loadMoreButton:disabled {
+    background-color: #ccc;
+    /* Color para el botón deshabilitado */
+    cursor: not-allowed;
+    /* Cambiar cursor al deshabilitar */
+}
+
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    width: 100%;
+
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    padding: 0px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    /* Cambiar de fixed a relative si es necesario */
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
